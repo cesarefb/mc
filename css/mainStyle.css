@@ -1,0 +1,249 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFF;
+	margin-left:0px;
+	margin-top:0px;
+	background-color: #313131;
+}
+
+a:link, a:visited, a:active {
+	color: #676156;
+	text-decoration: none;
+	font-weight: normal;
+}
+ 
+a:hover {
+	color: #BE0A26;
+	text-decoration:underline;
+}
+h1 {
+	color: #899;
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	text-transform: none;
+	font-size:24px;
+	font-weight:lighter;
+	padding: 0 0 0 5px;
+	margin: 0em;
+	text-transform:capitalize;
+}
+h2 {
+	color: #FFF;
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	text-transform: none;
+	font-weight:lighter;
+	font-size:24px;
+	padding: 0 0 0 5px;
+	margin: 0em;
+	text-transform:capitalize;
+	line-height: 30px;
+	background-image: url(../grafica/sfondoTitolini.png);
+	background-repeat: repeat-x;
+}
+h3 {
+	color: #899;
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	text-transform: none;
+	font-size:18px;
+	padding: 0 0 0 5px;
+	margin: 0em;
+	font-weight: bold;
+}
+
+
+
+h4 {
+	color: #898989;
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	font-size:16px;
+	padding: 0em;
+	margin: 0em;
+	font-weight: bolder;
+	padding-left: 0em;
+	text-transform: capitalize;
+}
+
+h4 a:link, h4 a:visited,  h4 a:active, h4 a:hover { 
+	color:#333333; 
+	text-decoration:none;
+	font-size:14px;
+
+}
+
+h5 {
+	color: #4aa0e0;
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	font-size:15px;
+	padding: 0em;
+	margin: 0em;
+	padding-left: 0.4em;
+}
+h6 {
+	color: #898989;
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	padding: 0 0 0 5px;
+	margin: 0em;
+}
+/*div contenitore*/
+#wrapper {
+	width: 900px;
+	position: relative;
+	margin: 0 auto;
+}
+#topSpacer {
+	width: 900px;
+	height: 10px;
+}
+#header {
+	width:900px;
+	height:200px;
+	background-image: url(../grafica/headerBigPic.png);
+	background-repeat:no-repeat;
+}
+#mainLinks {
+	width:900px;
+	height:49px;
+	padding: 5px 0px 5px 0px;
+}
+#mainContainer {
+	height:auto;
+	padding:10px 16px 5px 16px;
+	background-image: url(../grafica/sfondoMainContainer.png);
+}
+#footer {
+	height: 50px;
+	background-image:url(../grafica/footer.png);
+}
+#footerContent {
+	padding: 5px 16px 5px 16px;
+	
+}
+.footerText, .footerText a:link, .footerText a:active .footerText a:visited {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 9px;
+	color: #CCC;
+}
+.footerText a: hover {
+	font-size:9px;
+}
+.hmpgLeftContainer {
+	float:left;
+	width:220px;
+	height:auto;
+	background-image: url(../grafica/sfondoSpacerGrey.png);
+	background-repeat: repeat;
+	padding: 5px;
+	text-align: left;
+}
+.hmpgRightContainer {
+	float:right;
+	width:630px;
+	height:auto;
+	background-image: url(../grafica/sfondoSpacerGrey.png);
+	background-repeat: repeat;
+}
+.clear-both {
+	clear:both;
+	height:0px;
+	line-height:0px;
+}
+.formTitle {
+	font-size:12px;
+	color:#FFF;
+}
+
+/*scroll*/
+#boxCnt{
+	height:440px;
+}
+
+#cnt{
+	height: 420px;
+	overflow-y: auto;
+	margin: 10px;
+	text-align:left;
+}
+#scrollbar_track {
+	float:right;
+	top: 0px;
+	width: 11px;
+	/*height: 100%;*/
+  height:400px;
+	font-size: 0px;
+	z-index: 3;
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: url(../grafica/track.gif);
+	background-repeat: repeat-y;
+	background-position: 5px 0;
+}
+
+#scrollbar_track:hover #scrollbar_handle {
+	background-position:100% 0;
+}
+
+#scrollbar_handle {
+	/*width:10px;
+	background-color:#5c92e7;
+	cursor:move;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	opacity:0.9;
+    -moz-opacity:0.9;*/
+  /*background:transparent url(../images/elements/slide.gif) no-repeat scroll 0 0;
+  position: relative;
+  width: 100%;
+  height: 14px;
+  cursor: pointer;
+  z-index: 4;*/
+  background:#FFFFFF none repeat scroll 0 0;
+	border-bottom:1px solid #999999;
+	border-right:1px solid #666666;
+	cursor:pointer;
+	height:14px;
+	margin-left:3px;
+	position:relative;
+	width:5px;
+	z-index:4;
+	background-color: #999999;
+}
+
+#scrollbar_content {
+	overflow:hidden;
+	width:575px;
+	height:400px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+}
+
+/*form*/
+form {
+	padding:5px;
+}
+label {
+	position:relative;
+	clear:left;
+	float:left;
+	margin-right:2px;
+	text-align:right;
+}
+input {
+	padding:1px;
+	font-size:10px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.formButtonTxt {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:10px;
+	color:#FFF;
+}
+.title-h-delimiter {
+	margin:7px 0 10px 0;
+	background-color:#e9e9e9;
+	height:1px;
+}
